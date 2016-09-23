@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DotNetTestLibWrapper", "DotNetTestLibWrapper\DotNetTestLibWrapper.vcxproj", "{5077519B-FB4A-43BC-8BFA-7866C103A23A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpTestApp", "CsharpTestApp\CsharpTestApp.csproj", "{616FAB02-92C6-4C24-B380-BC9B060E030E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NativeTestLib", "NativeTestLib\NativeTestLib.vcxproj", "{0DF4583F-1AD1-435D-AD8B-6B4D1A23769C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5077519B-FB4A-43BC-8BFA-7866C103A23A}.Debug|x64.ActiveCfg = Debug|x64
+		{5077519B-FB4A-43BC-8BFA-7866C103A23A}.Debug|x64.Build.0 = Debug|x64
+		{5077519B-FB4A-43BC-8BFA-7866C103A23A}.Release|x64.ActiveCfg = Release|x64
+		{5077519B-FB4A-43BC-8BFA-7866C103A23A}.Release|x64.Build.0 = Release|x64
+		{616FAB02-92C6-4C24-B380-BC9B060E030E}.Debug|x64.ActiveCfg = Debug|x64
+		{616FAB02-92C6-4C24-B380-BC9B060E030E}.Debug|x64.Build.0 = Debug|x64
+		{616FAB02-92C6-4C24-B380-BC9B060E030E}.Release|x64.ActiveCfg = Release|x64
+		{616FAB02-92C6-4C24-B380-BC9B060E030E}.Release|x64.Build.0 = Release|x64
+		{0DF4583F-1AD1-435D-AD8B-6B4D1A23769C}.Debug|x64.ActiveCfg = Debug|x64
+		{0DF4583F-1AD1-435D-AD8B-6B4D1A23769C}.Debug|x64.Build.0 = Debug|x64
+		{0DF4583F-1AD1-435D-AD8B-6B4D1A23769C}.Release|x64.ActiveCfg = Release|x64
+		{0DF4583F-1AD1-435D-AD8B-6B4D1A23769C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
