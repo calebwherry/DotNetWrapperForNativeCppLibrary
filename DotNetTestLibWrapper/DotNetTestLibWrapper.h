@@ -3,10 +3,10 @@
 #pragma once
 
 // Wrapper namespace:
-namespace DotNetTestLibWrapper 
+namespace DotNetTestLibWrapper
 {
 
-	// No support for top-level free functions in .NET so we have to add them as 
+	// No support for top-level free functions in .NET so we add them as 
 	// static functions to a class.
 	public ref class FreeFunctions
 	{
