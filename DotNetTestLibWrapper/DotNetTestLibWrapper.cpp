@@ -9,15 +9,17 @@
 #include <string>
 
 using namespace System;
+using namespace msclr::interop;
 using namespace std;
 
+// Wrapper namespace:
 namespace DotNetTestLibWrapper
 {
 
-String^ FreeFunctions::ReverseString(String^ str)
-{
-	string nativeStr = msclr::interop::marshal_as<std::string>(str);
-	return gcnew String(NativeTestLib::ReverseString(nativeStr).c_str());
-}
+	String^ FreeFunctions::ReverseString(String^ str)
+	{
+		string nativeStr = marshal_as<std::string>(str);
+		return gcnew String(NativeTestLib::ReverseString(nativeStr).c_str());
+	}
 
-}
+}// DotNetTestLibWrapper namespace
