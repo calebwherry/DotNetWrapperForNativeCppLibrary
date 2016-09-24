@@ -1,6 +1,8 @@
 // DotNetTestLibWrapper.cpp
 
+// Managed includes:
 #include "DotNetTestLibWrapper.h"
+#include <msclr\marshal_cppstd.h>
 
 // Native includes:
 #include "NativeTestLib.h"
@@ -12,9 +14,9 @@ using namespace std;
 namespace DotNetTestLibWrapper
 {
 
-String^ ReverseString(const String^ str)
+String^ FreeFunctions::ReverseString(String^ str)
 {
-	string nativeStr;
+	string nativeStr = msclr::interop::marshal_as<std::string>(str);
 	return gcnew String(NativeTestLib::ReverseString(nativeStr).c_str());
 }
 

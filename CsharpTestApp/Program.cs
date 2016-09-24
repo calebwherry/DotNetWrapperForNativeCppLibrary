@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace CsharpTestApp
 {
@@ -8,6 +7,8 @@ namespace CsharpTestApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Test start.");
+
             // Test cases:
             var testCases = new List<Tuple<string, string>>();
             testCases.Add(Tuple.Create("", ""));
@@ -19,9 +20,11 @@ namespace CsharpTestApp
             // Test each case:
             foreach (var testCase in testCases)
             {
-                var reversedStr = DotNetTestLibWrapper.ReverseString(testCase.Item1);
-                Debug.Assert(reversedStr == testCase.Item2);
+                var reversedStr = DotNetTestLibWrapper.FreeFunctions.ReverseString(testCase.Item1);
+                Console.WriteLine("Test case: " + testCase + ", reversedStr='" + reversedStr + "', " + (reversedStr == testCase.Item2));
             }
+
+            Console.WriteLine("Test end.");
         }
     }
 }
